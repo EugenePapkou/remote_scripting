@@ -1,2 +1,2 @@
 # remote_scripting
-powershell remote scripting
+Powershell remote scripting.
