@@ -23,5 +23,3 @@ $cred = Get-Credential
 Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=true -ComputerName '192.0.0.10', 
     '192.0.0.11' -Credential $cred | ForEach-Object -Process {$_.InvokeMethod("EnableDHCP", $null)} 
 
-
-
