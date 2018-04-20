@@ -25,7 +25,7 @@ Get-WmiObject -Class Win32_NetworkAdapterConfiguration -Filter IPEnabled=true -C
 
 
 
-# Verifying if a service 'spooler' is running on remote computers. The list of computers is on a file "C:\servers.txt".
+# Verifying if a service 'spooler' is running on remote computers. The list of computers is in a file "C:\servers.txt".
 $cred = Get-Credential
 $servers = Get-Content "C:\servers.txt" 
 Get-WmiObject win32_service -ComputerName $servers -Credential $cred | 
